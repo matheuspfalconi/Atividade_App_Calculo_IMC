@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Cálculo IMC"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/textPreencherPeso"
+        android:layout_below="@id/textTitle"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira o seu peso:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:id="@+id/editTextPeso"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textPreencherPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/estilo_edit_text"
+        />
+
+    <TextView
+        android:id="@+id/textPreencherAltura"
+        android:layout_below="@id/textPreencherPeso"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira a sua altura:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextAltura"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textPreencherAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/estilo_edit_text"
+        />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAltura"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="25dp"
+        android:text="Resultado: "
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textResultadoCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAltura"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/textResultado"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textResultado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Calcular" />
+
+</RelativeLayout>
