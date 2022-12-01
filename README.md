@@ -10,4 +10,8 @@ Para acessar os arquivos importantes, siga esse caminho:
 
 - Layout do App
 
-App -> src -> main - res - layout - activity_main.xml
+app -> src -> main -> res -> layout -> activity_main.xml
+
+- Arquivo Kotlin
+
+app -> src -> main -> java -> com -> example -> calculoimc -> MainActivity.kt
